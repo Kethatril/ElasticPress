@@ -664,6 +664,7 @@ class EP_API {
 				if( ! isset( $terms_dic[ $term->term_id ] ) ) {
 					$terms_dic[ $term->term_id ] = array(
 						'term_id'  => $term->term_id,
+                        'term_taxonomy_id'  => $term->term_taxonomy_id,
 						'slug'     => $term->slug,
 						'name'     => $term->name,
 						'parent'   => $term->parent
