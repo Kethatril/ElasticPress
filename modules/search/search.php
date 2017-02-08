@@ -86,16 +86,21 @@ function ep_improve_default_search( $query ) {
 		return;
 	}
 
-	$query->set( 'search_fields', array(
-		'post_title',
-		'post_content',
-		'post_excerpt',
-		'author_name',
-		'taxonomies' => array(
-			'post_tag',
-			'category',
-		),
-    ) );
+    $search_fields = $query->get( 'search_fields' );
+
+    // Set search fields if they are not set
+    if( empty( $search_fields ) ) {
+        $query->set( 'search_fields', array(
+            'post_title',
+            'post_content',
+            'post_excerpt',
+            'author_name',
+            'taxonomies' => array(
+                'post_tag',
+                'category',
+            ),
+        ) );
+    }
 }
 
 /**
