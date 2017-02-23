@@ -162,7 +162,7 @@ class EP_WP_Query_Integration {
 	 * @param object &$query
 	 * @return array
 	 */
-	public function filter_the_posts( $posts, &$query ) {
+	public function filter_the_posts( $posts, $query ) {
 		if ( ! ep_elasticpress_enabled( $query ) || apply_filters( 'ep_skip_query_integration', false, $query ) || ! isset( $this->posts_by_query[spl_object_hash( $query )] ) ) {
 			return $posts;
 		}
