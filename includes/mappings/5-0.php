@@ -85,8 +85,7 @@ return array(
 									'type' => 'text',
 									'fields' => array(
 										'sortable' => array(
-											'type' => 'text',
-											'analyzer' => 'ewp_lowercase',
+											'type' => 'keyword',
 										),
 										'raw' => array(
 											'type' => 'keyword',
@@ -135,8 +134,7 @@ return array(
 											'type' => 'keyword',
 										),
 										'sortable' => array(
-											'type' => 'text',
-											'analyzer' => 'ewp_lowercase',
+											'type' => 'keyword',
 										),
 									),
 								),
@@ -186,8 +184,7 @@ return array(
 									'type' => 'keyword',
 								),
 								'sortable' => array(
-									'type' => 'text',
-									'analyzer' => 'ewp_lowercase',
+									'type' => 'keyword',
 								),
 							),
 						),
@@ -198,8 +195,7 @@ return array(
 									'type' => 'keyword',
 								),
 								'sortable' => array(
-									'type' => 'text',
-									'analyzer' => 'ewp_lowercase',
+									'type' => 'keyword',
 								),
 							),
 						),
@@ -230,8 +226,7 @@ return array(
 							'type' => 'keyword',
 						),
 						'sortable' => array(
-							'type' => 'text',
-							'analyzer' => 'ewp_lowercase',
+							'type' => 'keyword',
 						),
 					),
 				),
